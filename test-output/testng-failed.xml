@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation practice]">
+  <listeners>
+    <listener class-name="com.automationpractice.com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="com.automationpractice.qa.Test.HomeTest"/>
+      <class name="com.automationpractice.qa.Test.CartTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.automationpractice.qa.Test.HomeTest">
+        <methods>
+          <include name="VerifyTitle"/>
+        </methods>
+      </class> <!-- com.automationpractice.qa.Test.HomeTest -->
+      <class name="com.automationpractice.qa.Test.CartTest">
+        <methods>
+          <include name="Proceed"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.automationpractice.qa.Test.CartTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Automation practice] -->
