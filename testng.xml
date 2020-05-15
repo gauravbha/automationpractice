@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Automation practice" >
-<listeners>
-<listener 
-           class-name="com.automationpractice.com.qa.ExtentReportListener.ExtentReporterNG" />
-</listeners>
+<suite name="Suite" >
   <test name="Test">
     <classes>
-      <class name="com.automationpractice.qa.Test.HomeTest"/>
-       <class name="com.automationpractice.qa.Test.CartTest"/>
-     
+      <class name="com.automationpractice.qa.Test.SignInTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

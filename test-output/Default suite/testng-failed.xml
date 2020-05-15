@@ -10,9 +10,12 @@
     <classes>
       <class name="com.automationpractice.qa.Test.SignInTest">
         <methods>
+          <include name="printdata"/>
           <include name="registation" invocation-numbers="0"/>
+          <include name="teardown"/>
           <include name="setup"/>
-          <include name="submitreg"/>
+          <include name="payment"/>
+          <include name="checkout"/>
         </methods>
       </class> <!-- com.automationpractice.qa.Test.SignInTest -->
     </classes>
